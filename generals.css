@@ -1,0 +1,184 @@
+/*GENETALS */
+
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Outfit:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  background-color: rgb(244, 247, 247);
+  height: 100%;
+}
+body {
+  font-family: "Big Shoulders Display";
+  scroll-behavior: smooth;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden !important;
+}
+main {
+  padding: 0 1.6rem;
+}
+.heading-primary,
+.heading-secondary {
+  font-family: "Big Shoulders Display";
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.heading-primary {
+  font-size: 6rem;
+  line-height: 5.5rem;
+}
+.heading-secondary {
+  font-size: 5rem;
+  line-height: 4.5rem;
+}
+.description {
+  font-family: "Outfit";
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+.btn-hero {
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #ffffff;
+}
+.btn-hero--left {
+  padding: 2.4rem 3.5rem 2.4rem 3.2rem;
+  background-color: #151515;
+  margin-left: 1.6rem;
+  letter-spacing: 3.6px;
+}
+.btn-hero--right {
+  padding: 2.4rem;
+  background-color: #d5966c;
+}
+.invitation-box {
+  width: 100%;
+  height: 29.3rem;
+  background-color: #151515;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 4.8rem 2.4rem 0rem 2.4rem;
+}
+.footer {
+  width: 100%;
+  height: 33.6rem;
+  background-color: #151515;
+  padding: 4.8rem 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.8rem;
+}
+.footer-text {
+  font-family: "Outfit";
+  font-size: 1.6rem;
+  font-weight: 300;
+
+  line-height: 2.6rem;
+}
+.logo {
+  width: 11rem;
+  height: 4rem;
+}
+.logo-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+.social-icon {
+  height: 2rem;
+  width: 2rem;
+  /* color: #ffffff; */
+}
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+.heading-secondary--white,
+.description--white {
+  color: #ffffff;
+}
+/* more than 768PX (for tablet )*/
+@media (min-width: 48em) {
+  main {
+    padding: 0 4rem 0 3.9rem;
+  }
+
+  .heading-primary {
+    font-size: 7rem;
+    line-height: 6.5rem;
+  }
+  .heading-secondary {
+    font-size: 5rem;
+    line-height: 4.5rem;
+  }
+  .invitation-box {
+    width: 100%;
+    height: 39.6rem;
+    background-color: #151515;
+    padding: 4.8rem 2.9rem 0rem 2.9rem;
+  }
+  .footer {
+    height: 21.6rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 5.6rem 4rem 5.6rem 3.9rem;
+  }
+  .footer-text {
+    width: 37%;
+    align-items: center;
+  }
+  .logo-col {
+    width: 35%;
+    align-items: flex-end;
+  }
+}
+/* more than 1440PX (for desktop )*/
+@media (min-width: 90em) {
+  main {
+    padding: 0 11.46vw;
+  }
+  .heading-secondary {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+  .invitation-box {
+    width: 100%;
+    height: 37.7rem;
+    background-color: #151515;
+    padding: 6.5rem 4.7rem 6.4rem 4.8rem;
+  }
+
+  .footer {
+    width: 100vw;
+    height: 24.4rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10.6rem;
+    padding: 8rem 16.5rem;
+  }
+  .footer-text {
+    min-width: 44rem;
+    align-items: center;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+  .logo-col {
+    width: 35%;
+    align-items: flex-end;
+  }
+}
